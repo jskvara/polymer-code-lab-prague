@@ -12,7 +12,7 @@ Download the prepared project from Github and open it in [Chrome Dev Editor](htt
 
 Project is divided into steps according to this Code Lab. Try to run the application from _step06/_ and see how it works.
 
-![Notes application](notes_app.png)
+![Notes application](https://github.com/jskvara/polymer-code-lab-prague/blob/master/notes-app.png)
 
 ## Step 1 - Empty project
 Start in _step01/_ folder. This is a default Polymer project with HTML template and styles and only shows simple page with Polymer elements.
