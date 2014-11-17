@@ -1,0 +1,47 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html">
+<link rel="import" href="../bower_components/paper-ripple/paper-ripple.html">
+
+<polymer-element name="prague-note" attributes="note index">
+  <template>
+    <style>
+      .note {
+        padding: 0.5em;
+        margin: 0.5em;
+      }
+      .note .note-text {
+        margin: 0.5em;
+        font-size: 2em;
+      }
+      paper-icon-button.delete {
+        color: red;
+        float: right;
+        padding-top: 3ex;
+      }
+    </style>
+
+    <paper-shadow class="note" layout horizontal z="2">
+      <paper-ripple fit></paper-ripple>
+      <div flex class="note-text">
+        {{note}}
+      </div>
+      <div>
+        <paper-icon-button icon="clear" class="delete" on-click="{{deleteNote}}"></paper-icon-button>
+      </div>
+    </paper-shadow>
+
+  </template>
+  <script type="text/javascript">
+    Polymer({
+      publish: {
+        note: '',
+        index: 0
+      },
+      deleteNote: function() {
+        this.fire('delete-note', {'index': this.index});
+      }
+    });
+  </script>
+</polymer-element>

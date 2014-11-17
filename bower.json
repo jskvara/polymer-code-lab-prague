@@ -1,0 +1,14 @@
+{
+  "name": "polymer-code-lab-prague",
+  "description": "",
+  "homepage": "",
+  "keywords": [
+  ],
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer",
+    "core-elements": "Polymer/core-elements",
+    "paper-elements": "Polymer/paper-elements"
+  }
+}
