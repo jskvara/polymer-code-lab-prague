@@ -81,7 +81,7 @@ In file `prague-notes.html` we need to make several changes. At first, we need t
 
 Add some CSS styles inside `<template` element:
 ```html
-	<style>
+  <style>
     #notes-delete-all {
       background: red;
     }
@@ -116,20 +116,6 @@ HTML body of our element will be the following:
 
       <span flex>
         <paper-input floatinglabel label="Enter note" id="newNoteInput"></paper-input>
-      </span>
-
-      <paper-button raised id="notes-delete-all">
-        <core-icon icon="clear">
-        </core-icon>
-        Delete all
-      </paper-button>
-    </core-toolbar>
-
-    <core-toolbar>
-      <h2>Notes app</h2>
-
-      <span flex>
-        <paper-input floatinglabel label="Enter note"></paper-input>
       </span>
 
       <paper-button raised id="notes-delete-all">
@@ -265,7 +251,7 @@ In `prague-notes.html` file, we need to declare our `notes` collection and we ca
 ```html
   <script type="text/javascript">
     Polymer({
-      notes: ['Learn Polymer', 'Build Polymer App'],
+      notes: ['Learn Polymer', 'Build Polymer App']
     });
   </script>
 ```
